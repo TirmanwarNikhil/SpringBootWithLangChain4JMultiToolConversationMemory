@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: springboot-conversation-memory-poc
+
+server:
+  port: 8080
+
+app:
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      model-name: gpt-4o-mini
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: alpha
+    tags-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
